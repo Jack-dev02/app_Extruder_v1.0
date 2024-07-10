@@ -1,0 +1,315 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #353d3f;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* barra de navegacion principal */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    font-size: 2.5rem;
+    background-color: rgb(0, 107, 179);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    height: 100px;
+}
+
+ul .bar {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+a {
+    list-style: none;
+    padding: 15px;
+    color: #ffffff;
+
+}
+/* titulo principal de la pagina */
+.main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: #D8DAE5;
+    text-shadow: #13bfd6 0px 0px 10px;
+    height: 200px;
+    width: 100%;
+}
+
+H3 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: #D8DAE5;
+    text-shadow: #13bfd6 0px 0px 10px;
+}
+/* barra de ingreso de datos input */
+#search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-shadow: #D8DAE5 0px 0px 10px;
+    color: #10f080;
+    height: 50px;
+    width: 80%;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    border-top: 0px solid rgba(0,0,0,1.50 );
+    border-left: 0px solid rgba(0,0,0,1.50 );
+    border-right: 0px solid rgba(0,0,0,1.50 );
+    border-bottom: 2px solid rgba(95,1,247,0.863);
+    box-shadow: rgb(83, 127, 168)  0px 1px 0px;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.icon2 {
+    position: absolute;
+    left: 118rem;
+    height: 50px;
+    width: 50px;
+    top: 32rem;
+    cursor: pointer;
+    opacity: .8;
+}
+
+/*texto dentro del input */
+::placeholder {
+    color: #D8DAE5;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+/* contenedor de las card */
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 50px ;
+    padding-top: 20px;
+}
+/* clase principal de todas las card */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    width: 200px;
+    color: #D8DAE5;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgb(61, 157, 201)  0px 0px 5px ;
+}
+/* efecto zoom al pasar sobre las card */
+.card:hover{
+    cursor: pointer;
+    font-size: 1.8rem;
+    transform:  scale(1.4);
+    transition: transform 0.58s;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error1 {
+    display: none;
+}
+
+ .error {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 50rem;
+    font-size: 3.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: #ff0606 solid;
+    border-radius: 4rem;
+    background-color: #D8DAE5;
+    z-index: 3;
+}
+
+ div .boton-hide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 10rem;
+    box-shadow: #10f080;
+}
+
+.boton-hide button {
+    width: 10rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background: #13bfd6;
+    color: #ff0606;
+    border: 10;
+    box-shadow: rgb(255, 9, 9)  0px 0px 5px ;
+    text-decoration: none;
+}
+
+.buscar {
+    display: none;
+}
+
+.inactive {
+    display: none;
+}
+
+
+/* mobil */
+
+@media (max-width: 724px){
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+        width: 170px;
+        color: #D8DAE5;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: rgb(61, 157, 201)  0px 0px 5px ;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .buscar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        height: 30px;
+        width: 150px;
+        background-color: #5f29dd;
+        border-radius: 10px;
+        border: 10px;
+        color: aliceblue;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        cursor: pointer;
+    }
+
+    .icon2 {
+        position: absolute;
+        left: 40rem;
+        height: 10px;
+        width: 10px;
+        top: 320px;
+        opacity: .8;
+        cursor: pointer;
+        }   
+
+    ::placeholder {
+        font-size: 1.7REM;
+    }
+
+
+    .main-nav {
+        padding-left: 120px;
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+    }
+
+    .container-card {
+        padding-top: 40px;
+    }
+
+    .inactive {
+        display: none;
+    }
+}
+
+@media (max-width: 460px){
+
+    .active {
+        display: none;
+    }
+
+    .inactive {
+        display: flex;
+    }
+
+
+    .main-nav {
+        padding-left: 140px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+    }
+
+    .icon2 {
+        position: absolute;
+        left: 80%;
+        height: 10px;
+        width: 10px;
+        top: 320px;
+        opacity: .8;
+        cursor: pointer;
+        }
+        
+    ::placeholder {
+        font-size: 1.1REM;
+    }  
+    
+}
+

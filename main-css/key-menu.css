@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #353d3f;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.title h1 {
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f1f2f5;
+  text-shadow: #c210ee 0px 0px 10px;
+  height:200px;
+  width: 100%;
+}
+
+.container-card ul {
+display: flex;
+/*flex-direction: column;*/
+justify-content: space-around;
+align-items: center;
+padding-top: 1rem;
+}
+
+
+.card {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #000000;
+width: 300px;
+height: 50px;
+color: #D8DAE5;
+font-size: 1rem;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.3rem;
+text-align: center;
+text-shadow: #5ac2db 0px 0px 10px;  
+border-radius: 15px;
+box-shadow: rgb(160, 23, 240)  0px 0px 5px ;
+margin-top: 2rem;
+cursor: pointer;
+}
+
+.card a {
+color: #ffffff;
+text-decoration: none;
+}
+
+img {
+width: 600px;
+height: 300px;
+border: 1px solid;
+border-color: #c15adb;
+border-radius: 10px;
+}
+
+
+
+@media (max-width: 524px){
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .title h1 {
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f1f2f5;
+    text-shadow: #c210ee 0px 0px 10px;
+    height:200px;
+    width: 100%;
+}
+
+.container-card ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+ .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  width: 200px;
+  height: 50px;
+  color: #D8DAE5;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  text-shadow: #5ac2db 0px 0px 10px;  
+  border-radius: 15px;
+  box-shadow: rgb(160, 23, 240)  0px 0px 5px ;
+  margin-top: 2rem;
+}
+
+.card a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  width: 400px;
+  height: 200px;
+  border: 1px solid;
+  border-color: #c15adb;
+  border-radius: 10px;
+}
+}

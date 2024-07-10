@@ -1,0 +1,104 @@
+/* Estilos base para todos los dispositivos */
+
+body {
+    font-family: sans-serif;
+    background-color: #353d3f;
+    color: #ffffff;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-title img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.main-title h1 {
+    font-size: 3rem; 
+    text-align: center;
+    text-shadow: #1994f8 0px 0px 5px; 
+    margin-bottom: 20px;
+}
+
+.subtitulos {
+    display: flex; /* Cambio a flexbox para una sola columna */
+    flex-direction: column; /* Elementos en columna */
+    gap: 10px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.subtitulos li {
+    font-size: 1.6rem;
+}
+
+.card-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    align-items: center; /* Centra horizontalmente los elementos */
+    
+}
+
+.card {
+   padding-top: 30px;
+   background-color: #000000;
+   width: 450px;
+   height: 70px;
+   margin: 20px;
+   color: #D8DAE5;
+   font-size: 2.5rem;
+   font-weight: 700;
+   /*text-transform: uppercase;*/
+   letter-spacing: 0.5rem;
+   text-align: center;
+   text-shadow: #13afd6 0px 0px 10px;  
+   border-radius: 15px;
+   box-shadow: rgb(61, 126, 201)  0px 0px 5px ;
+   cursor: pointer;
+}
+
+.copied-message {/* Estilo para el mensaje de "Copiado" */
+    position: fixed;
+    bottom: 800px;
+    left: 50%; /* Mueve el mensaje al centro horizontal */
+    transform: translateX(-50%); /* Ajusta la posición para centrarlo */
+    background-color: #4CAF50; 
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    display: none; 
+    text-align: center; /* Centra el texto dentro del mensaje */
+  
+    }
+
+
+.name-list-active {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #e2df15;
+    text-shadow: #136ed6 0px 0px 10px;
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 768px) {
+    /* ... (Los estilos para pantallas más grandes pueden permanecer igual, ya que no afectan el diseño en una columna) ... */
+}
