@@ -17,7 +17,7 @@ function copiarAlPortapapeles(texto) {
   
   // Texto dentro de los divs de la card
   const cardValues = [
-    '7x7','7x7 BIO','8x8','8X8 BIO','9x9','9x9 BIO','4X4','4X4 BIO'
+    '7x7','7x7 BIO','8x8','8X8 BIO','9x9 EXT 2','9x9 BIO EXT 2','9x9 EXT 3','9x9 BIO EXT 3','4X4','4X4 BIO'
 ];
 
 
