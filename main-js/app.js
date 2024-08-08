@@ -7,7 +7,7 @@ const thicknessDisplay = document.querySelector('#search-card-8');
 const errorElement = document.querySelector('.error1');
 
 // URL del archivo JSON alojado en la web
-const jsonUrl = process.env.NEXT_PUBLIC_JSON_URL;
+const jsonUrl = NEXT_PUBLIC_JSON_URL;
 // Variable global para almacenar los datos del JSON
 let productData = [];
 
