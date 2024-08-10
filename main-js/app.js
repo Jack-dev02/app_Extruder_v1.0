@@ -7,7 +7,7 @@ const thicknessDisplay = document.querySelector('#search-card-8');
 const errorElement = document.querySelector('.error1');
 
 // URL del archivo JSON alojado en la web
-const jsonUrl = process.env.NEXT_PUBLIC_JSON_URL;
+const jsonUrl = "https://jack-dev02.github.io/Jack_dev02.github.io/data/db.json";
 // Variable global para almacenar los datos del JSON
 let productData = [];
 
